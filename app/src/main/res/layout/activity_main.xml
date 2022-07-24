@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="406dp"
+        android:layout_height="637dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17">
+
+
+        <TextView
+            android:id="@+id/textView_Nama"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/Nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan Nama Lengkap"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <TextView
+            android:id="@+id/textView_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan Email anda"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <TextView
+            android:id="@+id/textView_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Password"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="180dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="268dp">
+
+            <TextView
+                android:id="@+id/textView_Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <RadioButton
+                android:id="@+id/rb_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/rb_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewUsia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usia"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="200dp"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="113dp"
+            android:layout_height="25dp"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <TextView
+            android:id="@+id/textView_Prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prodi"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="495dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="528dp" />
+
+        <TextView
+            android:id="@+id/textView_Asrama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggal di asrama?"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="571dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="387dp"
+            android:layout_height="46dp"
+            android:text="ToggleButton"
+            android:textOff="Tidak"
+            android:textOn="Ya"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="594dp" />
+
+        <Button
+            android:id="@+id/btKirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="25dp"
+            android:text="Kirim"
+            tools:layout_editor_absoluteY="25dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
